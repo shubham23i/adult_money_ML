@@ -12,14 +12,6 @@ def get_requirements(file_path:str)->List[str]:
         if hyphen_dot_e in requirements:
             requirements.remove(hyphen_dot_e)
     return requirements
-        
-
-
-
-
-
-
-
 setup(
     name='adult_money_ML',
     version='0.0.1',
