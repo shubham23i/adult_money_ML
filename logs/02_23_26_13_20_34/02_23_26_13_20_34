@@ -1,0 +1,5 @@
+[ 2026-02-23 13:20:35,725 ] 7 root - INFO - the execution has started
+[ 2026-02-23 13:20:35,725 ] 15 root - INFO - reading mysql db started
+[ 2026-02-23 13:20:35,731 ] 22 root - INFO - comleted reading mysql db started
+[ 2026-02-23 13:20:36,246 ] 24 root - INFO - reading completed from mySQL database
+[ 2026-02-23 13:20:36,246 ] 12 root - INFO - custom exception
