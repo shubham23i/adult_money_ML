@@ -1,0 +1,30 @@
+[ 2026-02-26 11:00:02,444 ] 11 root - INFO - the execution has started
+[ 2026-02-26 11:00:02,507 ] 24 root - INFO - reading completed from mySQL database
+[ 2026-02-26 11:00:02,758 ] 30 root - INFO - data ingestion is completed.
+[ 2026-02-26 11:00:02,837 ] 60 root - INFO - Reading train and test files
+[ 2026-02-26 11:00:02,932 ] 98 root - INFO - Preprocessor and Label Encoder saved successfully
+[ 2026-02-26 11:00:04,091 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-02-26 11:00:04,095 ] 107 dagshub - INFO - Accessing as shubham23i
+[ 2026-02-26 11:00:05,292 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubham23i/adult_money_ML "HTTP/1.1 200 OK"
+[ 2026-02-26 11:00:06,042 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-02-26 11:00:06,042 ] 107 dagshub - INFO - Initialized MLflow to track repo "shubham23i/adult_money_ML"
+[ 2026-02-26 11:00:06,052 ] 107 dagshub - INFO - Repository shubham23i/adult_money_ML initialized!
+[ 2026-02-26 11:00:06,052 ] 48 root - INFO - Splitting training and test data
+[ 2026-02-26 11:00:06,052 ] 107 root - INFO - Starting model training with GridSearchCV
+[ 2026-02-26 11:00:06,052 ] 111 root - INFO - Training Logistic Regression
+[ 2026-02-26 11:00:20,358 ] 128 root - INFO - Logistic Regression Accuracy: 0.849531705819131
+[ 2026-02-26 11:00:20,358 ] 111 root - INFO - Training K-Neighbors Classifier
+[ 2026-02-26 11:00:32,118 ] 128 root - INFO - K-Neighbors Classifier Accuracy: 0.8407799785045295
+[ 2026-02-26 11:00:32,118 ] 111 root - INFO - Training Decision Tree Classifier
+[ 2026-02-26 11:00:33,476 ] 128 root - INFO - Decision Tree Classifier Accuracy: 0.860586519269154
+[ 2026-02-26 11:00:33,476 ] 111 root - INFO - Training Random Forest Classifier
+[ 2026-02-26 11:00:43,402 ] 128 root - INFO - Random Forest Classifier Accuracy: 0.8602794411177644
+[ 2026-02-26 11:00:43,402 ] 111 root - INFO - Training Gradient Boosting Classifier
+[ 2026-02-26 11:01:07,638 ] 128 root - INFO - Gradient Boosting Classifier Accuracy: 0.8711807154920927
+[ 2026-02-26 11:01:07,638 ] 111 root - INFO - Training XGBClassifier
+[ 2026-02-26 11:01:11,113 ] 128 root - INFO - XGBClassifier Accuracy: 0.8762475049900199
+[ 2026-02-26 11:01:11,113 ] 111 root - INFO - Training CatBoostClassifier
+[ 2026-02-26 11:01:26,578 ] 128 root - INFO - CatBoostClassifier Accuracy: 0.8737908797789037
+[ 2026-02-26 11:01:26,578 ] 111 root - INFO - Training AdaBoost Classifier
+[ 2026-02-26 11:01:47,801 ] 128 root - INFO - AdaBoost Classifier Accuracy: 0.8421618301857823
+[ 2026-02-26 11:02:09,362 ] 154 root - INFO - Best Model: XGBClassifier with score 0.8762475049900199

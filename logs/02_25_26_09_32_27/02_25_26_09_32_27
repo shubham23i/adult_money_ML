@@ -1,0 +1,24 @@
+[ 2026-02-25 09:32:29,603 ] 11 root - INFO - the execution has started
+[ 2026-02-25 09:32:29,666 ] 24 root - INFO - reading completed from mySQL database
+[ 2026-02-25 09:32:29,951 ] 30 root - INFO - data ingestion is completed.
+[ 2026-02-25 09:32:30,047 ] 60 root - INFO - Reading train and test files
+[ 2026-02-25 09:32:30,151 ] 98 root - INFO - Preprocessor and Label Encoder saved successfully
+[ 2026-02-25 09:32:30,155 ] 39 root - INFO - Splitting training and test data
+[ 2026-02-25 09:32:30,155 ] 101 root - INFO - Starting model training with GridSearchCV
+[ 2026-02-25 09:32:30,156 ] 105 root - INFO - Training Logistic Regression
+[ 2026-02-25 09:32:36,327 ] 122 root - INFO - Logistic Regression Accuracy: 0.849531705819131
+[ 2026-02-25 09:32:36,327 ] 105 root - INFO - Training K-Neighbors Classifier
+[ 2026-02-25 09:32:49,356 ] 122 root - INFO - K-Neighbors Classifier Accuracy: 0.8407799785045295
+[ 2026-02-25 09:32:49,356 ] 105 root - INFO - Training Decision Tree Classifier
+[ 2026-02-25 09:32:50,758 ] 122 root - INFO - Decision Tree Classifier Accuracy: 0.8607400583448488
+[ 2026-02-25 09:32:50,758 ] 105 root - INFO - Training Random Forest Classifier
+[ 2026-02-25 09:33:03,801 ] 122 root - INFO - Random Forest Classifier Accuracy: 0.8621219100261016
+[ 2026-02-25 09:33:03,801 ] 105 root - INFO - Training Gradient Boosting Classifier
+[ 2026-02-25 09:33:41,161 ] 122 root - INFO - Gradient Boosting Classifier Accuracy: 0.8711807154920927
+[ 2026-02-25 09:33:41,162 ] 105 root - INFO - Training XGBClassifier
+[ 2026-02-25 09:33:44,990 ] 122 root - INFO - XGBClassifier Accuracy: 0.8754798096115461
+[ 2026-02-25 09:33:44,990 ] 105 root - INFO - Training CatBoostClassifier
+[ 2026-02-25 09:34:00,690 ] 122 root - INFO - CatBoostClassifier Accuracy: 0.8737908797789037
+[ 2026-02-25 09:34:00,690 ] 105 root - INFO - Training AdaBoost Classifier
+[ 2026-02-25 09:34:23,936 ] 122 root - INFO - AdaBoost Classifier Accuracy: 0.8421618301857823
+[ 2026-02-25 09:34:23,936 ] 132 root - INFO - Best Model: XGBClassifier with score 0.8754798096115461

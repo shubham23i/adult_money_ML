@@ -1,0 +1,24 @@
+[ 2026-02-25 09:20:12,598 ] 9 root - INFO - the execution has started
+[ 2026-02-25 09:20:12,645 ] 24 root - INFO - reading completed from mySQL database
+[ 2026-02-25 09:20:12,876 ] 30 root - INFO - data ingestion is completed.
+[ 2026-02-25 09:20:12,960 ] 60 root - INFO - Reading train and test files
+[ 2026-02-25 09:20:13,052 ] 98 root - INFO - Preprocessor and Label Encoder saved successfully
+[ 2026-02-25 09:20:13,056 ] 37 root - INFO - Splitting training and test data
+[ 2026-02-25 09:20:13,056 ] 99 root - INFO - Starting model training with GridSearchCV
+[ 2026-02-25 09:20:13,057 ] 103 root - INFO - Training Logistic Regression
+[ 2026-02-25 09:20:19,731 ] 120 root - INFO - Logistic Regression Accuracy: 0.849531705819131
+[ 2026-02-25 09:20:19,731 ] 103 root - INFO - Training K-Neighbors Classifier
+[ 2026-02-25 09:20:33,924 ] 120 root - INFO - K-Neighbors Classifier Accuracy: 0.8407799785045295
+[ 2026-02-25 09:20:33,925 ] 103 root - INFO - Training Decision Tree Classifier
+[ 2026-02-25 09:20:35,540 ] 120 root - INFO - Decision Tree Classifier Accuracy: 0.860586519269154
+[ 2026-02-25 09:20:35,540 ] 103 root - INFO - Training Random Forest Classifier
+[ 2026-02-25 09:20:48,738 ] 120 root - INFO - Random Forest Classifier Accuracy: 0.861200675571933
+[ 2026-02-25 09:20:48,739 ] 103 root - INFO - Training Gradient Boosting Classifier
+[ 2026-02-25 09:21:22,954 ] 120 root - INFO - Gradient Boosting Classifier Accuracy: 0.8711807154920927
+[ 2026-02-25 09:21:22,956 ] 103 root - INFO - Training XGBClassifier
+[ 2026-02-25 09:21:26,276 ] 120 root - INFO - XGBClassifier Accuracy: 0.8754798096115461
+[ 2026-02-25 09:21:26,277 ] 103 root - INFO - Training CatBoostClassifier
+[ 2026-02-25 09:21:40,102 ] 120 root - INFO - CatBoostClassifier Accuracy: 0.8737908797789037
+[ 2026-02-25 09:21:40,102 ] 103 root - INFO - Training AdaBoost Classifier
+[ 2026-02-25 09:22:01,851 ] 120 root - INFO - AdaBoost Classifier Accuracy: 0.8421618301857823
+[ 2026-02-25 09:22:01,851 ] 130 root - INFO - Best Model: XGBClassifier with score 0.8754798096115461

@@ -1,0 +1,10 @@
+[ 2026-02-24 15:34:51,065 ] 9 root - INFO - the execution has started
+[ 2026-02-24 15:34:51,113 ] 24 root - INFO - reading completed from mySQL database
+[ 2026-02-24 15:34:51,348 ] 30 root - INFO - data ingestion is completed.
+[ 2026-02-24 15:34:51,426 ] 54 root - INFO - reading the train and test files
+[ 2026-02-24 15:34:51,426 ] 37 root - INFO - categorical columns:['workclass', 'marital_status', 'occupation', 'relationship', 'race', 'sex', 'native_country']
+[ 2026-02-24 15:34:51,426 ] 38 root - INFO - numerical columns:['age', 'education_num', 'capital_gain', 'capital_loss', 'hours_per_week']
+[ 2026-02-24 15:34:51,426 ] 64 root - INFO - applying preprocessing on train and test dataset
+[ 2026-02-24 15:34:51,581 ] 73 root - INFO - Saved preprocessing object
+[ 2026-02-24 15:34:51,581 ] 35 root - INFO - splitting training and test input data
+[ 2026-02-24 15:59:00,143 ] 18 root - INFO - custom exception

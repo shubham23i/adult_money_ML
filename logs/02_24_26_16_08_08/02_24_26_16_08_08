@@ -1,0 +1,7 @@
+[ 2026-02-24 16:08:10,833 ] 9 root - INFO - the execution has started
+[ 2026-02-24 16:08:10,900 ] 24 root - INFO - reading completed from mySQL database
+[ 2026-02-24 16:08:11,185 ] 30 root - INFO - data ingestion is completed.
+[ 2026-02-24 16:08:11,273 ] 60 root - INFO - Reading train and test files
+[ 2026-02-24 16:08:11,374 ] 98 root - INFO - Preprocessor and Label Encoder saved successfully
+[ 2026-02-24 16:08:11,375 ] 35 root - INFO - splitting training and test input data
+[ 2026-02-24 16:22:52,182 ] 18 root - INFO - custom exception
