@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Income Prediction</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#4facfe;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2f80ed;
+}
+
+.result{
+    margin-top:20px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    color:#2f80ed;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Adult Income Prediction</h1>
+
+<form action="/predict" method="post">
+
+<div class="form-grid">
+
+<input type="number" name="age" placeholder="Age" required>
+
+<select name="workclass">
+<option>Private</option>
+<option>State-gov</option>
+<option>Federal-gov</option>
+<option>Local-gov</option>
+<option>Self-emp-not-inc</option>
+<option>Self-emp-inc</option>
+</select>
+
+<input type="number" name="fnlwgt" placeholder="Final Weight">
+
+<select name="education">
+<option>Bachelors</option>
+<option>HS-grad</option>
+<option>Masters</option>
+<option>Doctorate</option>
+<option>Some-college</option>
+</select>
+
+<input type="number" name="education_num" placeholder="Education Number">
+
+<select name="marital_status">
+<option>Never-married</option>
+<option>Married-civ-spouse</option>
+<option>Divorced</option>
+<option>Separated</option>
+<option>Widowed</option>
+</select>
+
+<select name="occupation">
+<option>Exec-managerial</option>
+<option>Prof-specialty</option>
+<option>Sales</option>
+<option>Tech-support</option>
+<option>Adm-clerical</option>
+</select>
+
+<select name="relationship">
+<option>Husband</option>
+<option>Not-in-family</option>
+<option>Wife</option>
+<option>Own-child</option>
+</select>
+
+<select name="race">
+<option>White</option>
+<option>Black</option>
+<option>Asian-Pac-Islander</option>
+<option>Other</option>
+</select>
+
+<select name="sex">
+<option>Male</option>
+<option>Female</option>
+</select>
+
+<input type="number" name="capital_gain" placeholder="Capital Gain">
+
+<input type="number" name="capital_loss" placeholder="Capital Loss">
+
+<input type="number" name="hours_per_week" placeholder="Hours per Week">
+
+<select name="native_country">
+<option>United-States</option>
+<option>India</option>
+<option>Canada</option>
+<option>England</option>
+</select>
+
+</div>
+
+<br>
+
+<button type="submit">Predict Income</button>
+
+</form>
+
+<div class="result">
+{{ prediction_text }}
+</div>
+
+</div>
+
+</body>
+</html>

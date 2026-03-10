@@ -18,6 +18,8 @@ list_of_files=[
     f"src/{project_name}/exceptions.py",
     f"src/{project_name}/utils.py",
     f"src/{project_name}/logger.py",
+    f"templates/index.html",
+    "prediction_app.py",
     "app.py",
     "docker.py",
     "requirements.txt",
