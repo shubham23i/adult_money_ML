@@ -1,11 +1,13 @@
+flask
+gunicorn
 pandas
-numpy 
+numpy
 python-dotenv
 pymysql
 mysql-connector-python
 scikit-learn
-matplotlib 
+matplotlib
 seaborn
-XGBOOST
+xgboost
 catboost
 mlflow==2.2.2
